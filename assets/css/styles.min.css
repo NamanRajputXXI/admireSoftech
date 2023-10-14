@@ -1,0 +1,51 @@
+.cta-2 {
+    border: 1px solid #000;
+    color: #000;
+    font-weight: 400;
+    box-shadow: none !important;
+    padding: 8px 16px;
+    border-radius: 22px
+}
+
+.cta.cta-2 {
+    background-color: var(--bs-primary);
+    font-weight: 700;
+    color: #fff;
+    padding-inline: 30px
+}
+
+#header-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999
+}
+
+.navbar-nav .nav-link a.active {
+    color: #fff !important
+}
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link.active {
+    font-weight: 500 !important;
+    color: var(--bs-secondary-color)
+}
+
+.modal-body:is(input, textarea) {
+    width: 100%;
+    padding: 150px
+}
+
+.modal-body input {
+    padding: 10px
+}
+
+:root {
+    --bs-primary: #041569 !important;
+    --bs-btn-active-bg: #041569 !important
+}
+
+.btn-primary {
+    background-color: var(--bs-primary-text-emphasis)
+}
