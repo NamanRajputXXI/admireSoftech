@@ -51,49 +51,53 @@
 }
 .branding__container{
     display: flex;
-    gap: 50px;
+    gap: 70px;
 }
 .branding__container h1{
     font-size: 40px ;
     font-weight: 600;
 }
-.heading{
-    font-size:20px;
-    font-weight:600;
-    color:#3D5AFE;
 
-}
-
-  .line1{
-    color:#000;
-    font-size:12px;
-
-  }
-   .line2{
-    color:#000;
-    font-size:12px;
-    
-  }
-   .line3{
-    color:#000;
-    font-size:12px;
-    
-  }
 
   .cards{
-
+display: flex;
+justify-content: center;
+align-items: center;
     transition: all 0.5s ease;
     cursor: pointer;
     
 
   }
     
-
+  .branding__section--heading {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .gap{
+    gap: 30px;
+  }
 
 .cards:hover{
-
-    box-shadow: 5px 6px 6px 2px #e9ecef;
     transform: scale(1.1);
+}
+.branding__collage{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 40px;
+}
+.branding__banner{
+    min-height: 70vh;
+  background-image: url("https://www.frontsigns.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2020/12/Business-Branding-Ideas.jpg.webp");
+  background-image: no-repeat;
+  background-size: cover;
+ 
+
+  z-index: 0;
+  color: white;
 }
 @media (max-width: 786px) {
     .branding__container{
@@ -102,7 +106,14 @@
         justify-content: center;
         align-items: center;
     }
-    .branding__container text{
-        width: 100%;
+
+    .branding__collage{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
+@media (max-width: 480px){
+    .cards img{
+        height: 140px;
+        width: 250px;
+    }
+} 
