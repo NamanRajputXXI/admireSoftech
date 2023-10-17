@@ -117,3 +117,10 @@ align-items: center;
         width: 250px;
     }
 } 
+.modgal{
+   
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
