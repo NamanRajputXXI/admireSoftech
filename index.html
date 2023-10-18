@@ -2,7 +2,7 @@
 <html
   data-bs-theme="light"
   lang="en"
-  style="--bs-primary: #041569; --bs-primary-rgb: 4, 21, 105"
+ 
 >
   <head>
     <meta charset="utf-8" />
@@ -11,6 +11,7 @@
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
     <title>Home - Admire Softech</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
     <link
       rel="stylesheet"
@@ -21,14 +22,80 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
     />
     <link rel="stylesheet" href="assets/css/styles.min.css" />
+    <script src="./assets/js/script.js"></script>
   </head>
 
   <body>
+    <div id="simpleModal" class="modal    " tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title">Contact form</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeBootstrapPopup()">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="container py-2">
+                <div class="row mb-5">
+                 
+                </div>
+                <div class="row d-flex justify-content-center">
+                  <div class="col-12">
+                    <div>
+                      <form class=" p-xl-4" method="post" data-bs-theme="light">
+                        <div class="mb-3">
+                          <input
+                            class="form-control"
+                            type="text"
+                            id="name-1"
+                            name="name"
+                            placeholder="Name"
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <input
+                            class="form-control"
+                            type="email"
+                            id="email-1"
+                            name="email"
+                            placeholder="Email"
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <textarea
+                            class="form-control"
+                            id="message-1"
+                            name="message"
+                            rows="6"
+                            placeholder="Message"
+                          ></textarea>
+                        </div>
+                        <div>
+                          <button
+                            class="btn btn-primary shadow d-block w-100"
+                            type="submit"
+                          >
+                            Send
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              
+
+          </div>
+      </div>
+  </div>
+  
+  
     <div class="d-lg-flex">
       <div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
         <div class="modal-dialog" role="document" style="max-width: 350px">
           <div class="modal-content">
-            <div class="modal-header d-lg-flex" style="border: #ffff00">
+            <div class="modal-header d-lg-flex">
               <h4 class="modal-title">
                 <strong>Request A Quote Today!</strong>
               </h4>
@@ -942,5 +1009,27 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="assets/js/script.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.1.2/src/js.cookie.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript">
+
+  window.onload = function () {
+  if (!sessionStorage.getItem("modalShown")) {
+    OpenBootstrapPopup();
+  }
+};
+
+function OpenBootstrapPopup() {
+  $("#simpleModal").modal("show");
+}
+
+function closeBootstrapPopup() {
+  $("#simpleModal").modal("hide");
+  sessionStorage.setItem("modalShown", "true");
+}
+ 
+</script>
   </body>
 </html>
