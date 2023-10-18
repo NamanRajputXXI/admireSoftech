@@ -1139,9 +1139,11 @@
     ></script>
     <script type="text/javascript">
       window.onload = function () {
-        if (!sessionStorage.getItem("modalShown")) {
-          OpenBootstrapPopup();
-        }
+        setTimeout(() => {
+          if (!sessionStorage.getItem("modalShown")) {
+            OpenBootstrapPopup();
+          }
+        }, 2000);
       };
 
       function OpenBootstrapPopup() {
