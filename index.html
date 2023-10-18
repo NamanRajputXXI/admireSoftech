@@ -21,6 +21,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
     />
     <link rel="stylesheet" href="assets/css/styles.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="./assets/js/script.js"></script>
   </head>
 
@@ -31,68 +38,51 @@
       tabindex="-1"
       role="dialog"
     >
-      <div
-        class="modal-dialog modal-dialog-centere w-sm-100 w-75"
-        role="document"
-      >
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Contact form</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-              onclick="closeBootstrapPopup()"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
+      <div class="modal-dialog modal-dialog-center modaal" role="document">
+        <div class="modal-content modal__container">
+          <div class="left__modal--content bg-primary">
+            <h3>Contact us</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Praesentium
+            </p>
           </div>
-          <div class="container py-2">
-            <div class="row mb-5"></div>
-            <div class="row d-flex justify-content-center">
-              <div class="col-12">
-                <div>
-                  <form class="p-xl-4" method="post" data-bs-theme="light">
-                    <div class="mb-3">
-                      <input
-                        class="form-control"
-                        type="text"
-                        id="name-1"
-                        name="name"
-                        placeholder="Name"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <input
-                        class="form-control"
-                        type="email"
-                        id="email-1"
-                        name="email"
-                        placeholder="Email"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <textarea
-                        class="form-control"
-                        id="message-1"
-                        name="message"
-                        rows="6"
-                        placeholder="Message"
-                      ></textarea>
-                    </div>
-                    <div>
-                      <button
-                        class="btn btn-primary shadow d-block w-100"
-                        type="submit"
-                      >
-                        Send
-                      </button>
-                    </div>
-                  </form>
-                </div>
+          <div class="right__modal--content">
+            <i
+              class="fa-solid fa-xmark close__modal"
+              onclick=" closeBootstrapPopup()"
+            ></i>
+            <form>
+              <div class="form-group py-3">
+                <input
+                  type="name"
+                  class="form-control"
+                  id="name"
+                  aria-describedby=""
+                  placeholder="Enter your name"
+                />
               </div>
-            </div>
+              <div class="form-group py-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter email"
+                />
+              </div>
+              <div class="form-group py-3">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="phone"
+                  aria-describedby=""
+                  placeholder="Enter mobile number"
+                />
+              </div>
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
           </div>
         </div>
       </div>
@@ -221,6 +211,37 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link active" href="about.html">About</a>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <p
+                    class="dropdown-toggle"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Our Services
+                  </p>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a class="dropdown-item" href="./webDesignDevlopment.html"
+                      >Web Design & Development</a
+                    >
+                    <a class="dropdown-item" href="./seo.html">SEO</a>
+                    <a class="dropdown-item" href="./graphicDesign.html"
+                      >Graphic Design</a
+                    >
+                    <a class="dropdown-item" href="./googleAds.html"
+                      >Google Ads</a
+                    >
+                    <a class="dropdown-item" href="./fbInstaAds.html"
+                      >Facebook & Instagram Ads</a
+                    >
+                  </div>
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contacts.html">Contact</a>
@@ -875,7 +896,7 @@
         </div>
       </div>
     </section>
-    <section class="container py-3">
+    <section class="container py-2">
       <div class="accordion pt-3 w-100" id="accordionExample1">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
@@ -1111,14 +1132,12 @@
       crossorigin="anonymous"
     ></script>
     <script type="text/javascript">
-      var modal = document.getElementById("simpleModal");
       window.onload = function () {
-        setTimeout(function () {
-          if (!sessionStorage.getItem("modalShown")) {
-            OpenBootstrapPopup();
-          }
-        }, 2000); // 2000 milliseconds = 2 seconds
+        if (!sessionStorage.getItem("modalShown")) {
+          OpenBootstrapPopup();
+        }
       };
+
       function OpenBootstrapPopup() {
         $("#simpleModal").modal("show");
       }
