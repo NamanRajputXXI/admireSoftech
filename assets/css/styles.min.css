@@ -147,6 +147,12 @@ align-items: center;
 .branding__navItem{
     margin-right:  50px;
 }
+@media (max-width: 940px) {
+    .branding__navItem{
+        margin-right:  100px;
+    } 
+    
+}
 @media (max-width: 786px) {
     .branding__container{
         flex-direction: column;
