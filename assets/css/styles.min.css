@@ -138,6 +138,7 @@ align-items: center;
     right: -30px;
     top: -5px;
     font-size: 30px;
+    color: white;
 }
 @media (max-width: 786px) {
     .branding__container{
@@ -155,6 +156,9 @@ align-items: center;
     .modal__container{
         width: 80%;
     }
+    .left__modal--content{
+        padding: 15px;
+    }
 }
 @media (max-width: 480px){
     .cards img{
@@ -169,7 +173,11 @@ align-items: center;
         width: 100%;
         border-top-left-radius: 15px;
     border-bottom-left-radius: 0px;
+    padding: 15px;
     border-top-right-radius: 15px;
+    }
+    .right__modal--content{
+        padding: 15px;
     }
 
 
