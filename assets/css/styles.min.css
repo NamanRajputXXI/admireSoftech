@@ -140,12 +140,23 @@ align-items: center;
     font-size: 30px;
     color: white;
 }
+.quote__button{
+    position: fixed;
+    right: 10px;
+}
+.branding__navItem{
+    margin-right:  50px;
+}
 @media (max-width: 786px) {
     .branding__container{
         flex-direction: column;
         gap: 30px;
         justify-content: center;
         align-items: center;
+    }
+    .quote__button{
+        top: 90px;
+        right: 10px;
     }
 
     .branding__collage{
