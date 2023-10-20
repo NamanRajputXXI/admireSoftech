@@ -247,15 +247,16 @@ align-items: center;
     font-weight: 700;
     
 }
+
 .list{
-    
+    padding-left: 15px;
     padding-bottom: 20px;
 }
 .price__list .list li{
     display: flex;
     gap: 15px;
     font-size: 1rem;
-    padding: 0px 15px;
+    
 
     align-items: center;
 }
