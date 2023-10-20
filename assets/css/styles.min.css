@@ -200,8 +200,85 @@ align-items: center;
 .dropDown__services button {
     background-color: white;
 }
-/* Define the default text color */
+/* styling for price list in services */
+.price__lists{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    color: black;
 
+}
+.price__list:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transform: scale(1.02);
+    transition: ease-in-out 0.5s;
+
+}
+.price__list{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    gap: 10px;
+    border: 1px solid rgb(204, 204, 204)
+}
+
+.price__list--heading1{
+    background-color: #05156c;
+    padding: 15px 15px;
+    color: white;
+    display: flex;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    margin-top: -1px;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.price__list--heading2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 15px;
+    
+}
+.price__list--heading2 h3{
+    font-weight: 700;
+    
+}
+.list{
+    
+    padding-bottom: 20px;
+}
+.price__list .list li{
+    display: flex;
+    gap: 15px;
+    font-size: 1rem;
+    padding: 0px 15px;
+
+    align-items: center;
+}
+.purchase__button{
+    height: 50px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-bottom-left-radius: 15px;
+  background-color: #05156c;;
+    border-bottom-right-radius: 15px;
+}
+@media (max-width: 1024px) {
+    .price__lists{
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+       
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+}
 @media (max-width: 940px) {
     .branding__navItem{
         margin-right:  100px;
@@ -264,6 +341,13 @@ align-items: center;
     }
     .left__modal--content{
         padding: 15px;
+    }
+    .price__lists{
+       
+        grid-template-columns: repeat(1, 1fr);
+
+        width: 90%;
+        
     }
 }
 @media (max-width: 576px) {
