@@ -176,6 +176,12 @@ align-items: center;
     font-size: 20px;
     font-weight: 100;
 }
+
+.dropDown__services button {
+    background-color: white;
+}
+/* Define the default text color */
+
 @media (max-width: 940px) {
     .branding__navItem{
         margin-right:  100px;
