@@ -149,23 +149,23 @@ align-items: center;
     margin-right:  100px;
 }
 .service__banner img{
-    width: 400px;
+    width: 500px;
    
 }
 .service__banner--left{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 50px;
 }
 
 .service__banner{
-    
+    height: 500px;
     align-items: center;
     width: 100%;
     display: flex;
     justify-content: space-around;
     background-color: rgb(237, 214, 0);
-    padding: 40px 40px;
+    padding: 30px 40px;
     gap: 50px;
 }
 .service__banner h1{
