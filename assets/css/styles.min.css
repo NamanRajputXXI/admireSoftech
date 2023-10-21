@@ -193,6 +193,10 @@ align-items: center;
     font-size: 20px;
     font-weight: 100;
 }
+.hero__section--homePage__image{
+    min-width: 200px; 
+    max-width: 500px;
+}
 
 
 .dropDown__services button {
@@ -407,7 +411,15 @@ align-items: center;
 
 @media (max-width: 576px) {
     
-    
+    .hero__section--homePage__image{
+        min-width: 200px; 
+        max-width: 300px;
+    }
+    .view{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .service__banner{
        
        flex-direction: column-reverse;
