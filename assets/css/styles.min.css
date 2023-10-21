@@ -109,7 +109,7 @@ align-items: center;
 }
 .left__modal--content{
     display: flex;
-    
+    justify-content: space-between;
     flex-direction: column;
     gap: 10px;
     padding: 30px 15px;
@@ -120,6 +120,7 @@ align-items: center;
     
     width: 45%;
 }
+
 .left__modal--content p{
     font-size: 18px;
 }
@@ -280,6 +281,10 @@ align-items: center;
     gap: 50px;
 
 }
+.our__brands--heading{
+    font-size: 45px;
+    font-weight: 700;
+}
 .brands__container{
     gap: 30px;
     display: grid;
@@ -288,8 +293,8 @@ align-items: center;
     grid-template-columns: repeat(3, 1fr);   
 }
 .brands__container img{
-    width: 350px;
-    height: 150px;
+    min-width: 350px;
+    min-height: 150px;
 }
 @media (max-width: 1024px) {
    
@@ -364,14 +369,18 @@ align-items: center;
         font-size: 12px;
     }
     .brands__container img{
-        width: 270px;
-        height: 80px;
+        min-width: 270px;
+        min-height: 80px;
     }
 
 }
 @media(max-width:600px){
     .modal__container{
         width: 80%;
+    }
+    .our__brands--heading{
+        font-size: 35px;
+        
     }
     .left__modal--content{
         padding: 15px;
@@ -416,6 +425,13 @@ align-items: center;
     
 }
 @media (max-width: 480px){
+    .our__brands--heading{
+        font-size: 35px;
+        
+    }
+    .left__modal--content img{
+        display: none;
+    }
     .cards img{
         height: 140px;
         width: 250px;

@@ -21,6 +21,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
     />
     <link rel="stylesheet" href="assets/css/styles.min.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -28,7 +32,33 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="./assets/js/script.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./assets/js/script.min.js"></script>
   </head>
 
   <body>
@@ -41,10 +71,19 @@
       <div class="modal-dialog modal-dialog-center modaal" role="document">
         <div class="modal-content modal__container">
           <div class="left__modal--content">
-            <h3>Login</h3>
-            <p>
-              Get Access to your order and wishlist, Order and Recommendations
-            </p>
+            <div class="py-3">
+              <h3>Login</h3>
+              <p>
+                Get Access to your order and wishlist, Order and Recommendations
+              </p>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+              <img
+                src="https://i.pinimg.com/originals/19/97/f3/1997f3da28e8d29289097871f45b04fd.gif"
+                alt=""
+                width="100%"
+              />
+            </div>
           </div>
           <div class="right__modal--content">
             <i
@@ -539,7 +578,7 @@
     <section
       class="our__brands my-5 d-flex flex-column container justify-content-center align-items-center"
     >
-      <h1 class="fw-bold">
+      <h1 class="our__brands--heading">
         We've worked for some of the finest brands in India
       </h1>
       <div class="brands__container">
@@ -662,10 +701,9 @@
             </p>
           </div>
         </div>
-        <div
-          class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 d-sm-flex justify-content-sm-center"
-        >
-          <div class="col mb-4" data-aos="zoom-in" data-aos-duration="700">
+
+        <div class="py-5 owl-carousel container owl-theme">
+          <div class="col mb-4">
             <div
               class="d-flex flex-column align-items-center align-items-sm-start"
             >
@@ -677,24 +715,20 @@
               </p>
               <div class="d-flex">
                 <img
-                  class="rounded-circle flex-shrink-0 me-3 fit-cover"
-                  width="50"
-                  height="50"
+                  class="rounded-circle me-3 fit-cover"
+                  style="width: 100px; height: 100px"
                   src="assets/img/team/avatar2.jpg"
                 />
                 <div>
-                  <p class="fw-bold text-primary mb-0">John Smith</p>
+                  <p class="fw-bold text-primar mb-0" style="width: 100px">
+                    John Smith
+                  </p>
                   <p class="text-muted mb-0">Erat netus</p>
                 </div>
               </div>
             </div>
           </div>
-          <div
-            class="col mb-4"
-            data-aos="zoom-in"
-            data-aos-duration="700"
-            data-aos-delay="500"
-          >
+          <div class="col mb-4">
             <div
               class="d-flex flex-column align-items-center align-items-sm-start"
             >
@@ -706,24 +740,20 @@
               </p>
               <div class="d-flex">
                 <img
-                  class="rounded-circle flex-shrink-0 me-3 fit-cover"
-                  width="50"
-                  height="50"
+                  style="width: 100px; height: 100px"
+                  class="rounded-circle me-3 fit-cover"
                   src="assets/img/team/avatar4.jpg"
                 />
                 <div>
-                  <p class="fw-bold text-primary mb-0">John Smith</p>
+                  <p class="fw-bold text-primary mb-0" style="width: 100px">
+                    John Smith
+                  </p>
                   <p class="text-muted mb-0">Erat netus</p>
                 </div>
               </div>
             </div>
           </div>
-          <div
-            class="col mb-4"
-            data-aos="zoom-in"
-            data-aos-duration="700"
-            data-aos-delay="1000"
-          >
+          <div class="col mb-4">
             <div
               class="d-flex flex-column align-items-center align-items-sm-start"
             >
@@ -735,13 +765,14 @@
               </p>
               <div class="d-flex">
                 <img
-                  class="rounded-circle flex-shrink-0 me-3 fit-cover"
-                  width="50"
-                  height="50"
+                  style="width: 100px; height: 100px"
+                  class="rounded-circle me-3 fit-cover"
                   src="assets/img/team/avatar5.jpg"
                 />
                 <div>
-                  <p class="fw-bold text-primary mb-0">John Smith</p>
+                  <p class="fw-bold text-primary mb-0" style="width: 100px">
+                    John Smith
+                  </p>
                   <p class="text-muted mb-0">Erat netus</p>
                 </div>
               </div>
