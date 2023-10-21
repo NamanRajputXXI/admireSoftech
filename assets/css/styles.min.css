@@ -14,14 +14,7 @@
     padding-inline: 30px
 }
 
-#header-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 999
-}
+
 
 .navbar-nav .nav-link a.active {
     color: #fff !important
@@ -367,6 +360,7 @@ align-items: center;
        
        flex-direction: column-reverse;
        height: 500px;
+       padding: 20px 10px
     }
     .service__banner h1{
         font-size: 40px;
