@@ -165,6 +165,9 @@ align-items: center;
     width: 500px;
    
 }
+#services__container{
+    margin-top: 150px;
+}
 .service__banner--left{
     display: flex;
     flex-direction: column;
@@ -189,6 +192,7 @@ align-items: center;
     font-size: 20px;
     font-weight: 100;
 }
+
 
 .dropDown__services button {
     background-color: white;
@@ -271,7 +275,24 @@ align-items: center;
   background-color: #05156c;;
     border-bottom-right-radius: 15px;
 }
+.our__brands{
+    margin-top: 180px;
+    gap: 50px;
+
+}
+.brands__container{
+    gap: 30px;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);   
+}
+.brands__container img{
+    width: 350px;
+    height: 150px;
+}
 @media (max-width: 1024px) {
+   
     .price__lists{
         gap: 20px;
         grid-template-columns: repeat(2, 1fr);
@@ -279,7 +300,9 @@ align-items: center;
         justify-content: center;
         align-items: center;
     }
-
+    .brands__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
     
 }
 @media (max-width: 940px) {
@@ -289,6 +312,10 @@ align-items: center;
     
 }
 @media (max-width: 786px) {
+    .brands__container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
     .branding__container{
         flex-direction: column;
         gap: 30px;
@@ -335,6 +362,10 @@ align-items: center;
     }
     .right__modal--content input::placeholder{
         font-size: 12px;
+    }
+    .brands__container img{
+        width: 270px;
+        height: 80px;
     }
 
 }
