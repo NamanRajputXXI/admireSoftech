@@ -211,11 +211,12 @@ align-items: center;
 .price__list:hover{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transform: scale(1.02);
-    transition: ease-in-out 0.5s;
+    transition: transform 0.5s;
 
 }
 .price__list{
     display: flex;
+    
     flex-direction: column;
     border-radius: 15px;
     gap: 10px;
@@ -257,7 +258,7 @@ align-items: center;
 }
 
 .list{
-    padding: 0 5px 20px 15px;
+    padding: 0 15px 20px 15px;
    
 }
 .price__list .list li{
