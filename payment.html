@@ -18,10 +18,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
     />
     <link rel="stylesheet" href="assets/css/styles.min.css" />
-    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
-    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
-    <script src="jquery.min.js"></script>
-    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <!-- <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" /> -->
+    <!-- <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" /> -->
+    <!-- <script src="jquery.min.js"></script> -->
+    <!-- <script src="owlcarousel/owl.carousel.min.js"></script> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -58,188 +58,18 @@
     <script src="./assets/js/script.min.js"></script>
   </head>
   <body>
-    <div class="d-lg-flex">
-      <div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
-        <div class="modal-dialog" role="document" style="max-width: 350px">
-          <div class="modal-content">
-            <div class="modal-header d-lg-flex">
-              <h4 class="modal-title">
-                <strong>Request A Quote Today!</strong>
-              </h4>
-              <button
-                class="btn-close"
-                type="button"
-                aria-label="Close"
-                data-bs-dismiss="modal"
-              ></button>
-            </div>
-            <div
-              class="modal-body"
-              style="margin-bottom: 0px; padding-bottom: 0px"
-            >
-              <div style="margin-bottom: 15px">
-                <input
-                  type="text"
-                  placeholder="Enter your name"
-                  style="width: 100%"
-                />
-              </div>
-              <div style="margin-bottom: 15px">
-                <input
-                  type="tel"
-                  placeholder="Enter your mobile"
-                  style="width: 100%"
-                />
-              </div>
-              <div style="margin-bottom: 15px">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  style="width: 100%"
-                />
-              </div>
-              <div style="margin-bottom: 15px">
-                <select style="width: 100%; padding: 10px; color: grey">
-                  <option value="default" selected="">Select Service</option>
-                  <option value="website">
-                    Website Design &amp; Development
-                  </option>
-                  <option value="seo">SEO</option>
-                  <option value="google-ads">Google Ads</option>
-                  <option value="fb&amp;insta_ads">
-                    Facebook &amp; Instagram Ads
-                  </option>
-                  <option value="linkedin_ads">LinkedIn Ads</option>
-                </select>
-              </div>
-              <div style="margin-bottom: 15px">
-                <textarea
-                  cols="24"
-                  style="width: 100%; padding: 10px; padding-bottom: 0px"
-                  placeholder="Enter your message"
-                ></textarea>
-              </div>
-            </div>
-            <div
-              class="modal-footer d-lg-flex justify-content-lg-center"
-              style="border: 0; padding-top: 0"
-            >
-              <button
-                class="btn btn-primary"
-                type="button"
-                style="width: 100%; border-radius: 4px"
-              >
-                SUBMIT
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div style="position: relative">
-      <div id="header-video"></div>
-      <nav
-        class="navbar navbar-expand-md sticky-top d-flex d-lg-flex justify-content-between navbar-shrink"
-        id="mainNav"
-        style="padding: 0"
-      >
-        <div class="container">
-          <a
-            class="navbar-brand d-flex align-items-center"
-            href="/"
-            style="padding: 0; margin: 0"
-            ><img
-              src="assets/img/Admire_final-removebg-preview.png"
-              style="width: 121px" /></a
-          ><button
-            data-bs-toggle="collapse"
-            class="navbar-toggler"
-            data-bs-target="#navcol-1"
-          >
-            <span class="visually-hidden">Toggle navigation</span
-            ><span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse"
-            id="navcol-1"
-            style="flex-grow: 0"
-          >
-            <ul
-              class="navbar-nav mx-auto"
-              style="
-                margin-block: initial !important;
-                margin-inline: initial;
-                margin-left: 0 !important;
-                margin-right: 0 !important;
-              "
-            >
-              <li class="nav-item">
-                <a class="nav-link active" href="./index.html">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  data-bs-toggle="dropdown"
-                >
-                  Services
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="./services.html">Service </a>
-                  <a class="dropdown-item" href="./webDesignDevlopment.html"
-                    >Web Development</a
-                  >
-                  <a class="dropdown-item" href="./seo.html">Seo</a>
-                  <a class="dropdown-item" href="./graphicDesign.html"
-                    >Graphic Design</a
-                  >
-                  <a class="dropdown-item" href="./googleAds.html"
-                    >Google Ads</a
-                  >
-                  <a class="dropdown-item" href="./fbInstaAds.html"
-                    >Facebook Ads</a
-                  >
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="about.html">About</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="contacts.html">Contact</a>
-              </li>
-            </ul>
-            <a
-              href="request.html"
-              class="shadow cta-2"
-              role="button"
-              data-bs-target="#modal-1"
-              data-bs-toggle="modal"
-              >Request A Quote</a
-            >
-          </div>
-        </div>
-      </nav>
-    </div>
     <div class="container py-5">
-      <!-- For demo purpose -->
       <div class="row mb-4">
         <div class="col-lg-8 mx-auto text-center">
           <h1 class="display-3">Pay your Bill</h1>
         </div>
       </div>
-      <!-- End -->
+
       <div class="row">
         <div class="col-lg-6 mx-auto">
           <div class="card">
             <div class="card-header">
               <div class="bg-white shadow-sm pt-4 pl-2 pr-2 pb-2">
-                <!-- Credit card form tabs -->
                 <ul
                   role="tablist"
                   class="nav bg-light nav-pills rounded nav-fill mb-3"
@@ -265,10 +95,8 @@
                   </li>
                 </ul>
               </div>
-              <!-- End -->
-              <!-- Credit card form content -->
+
               <div class="tab-content">
-                <!-- credit card info-->
                 <div id="credit-card" class="tab-pane fade show active pt-3">
                   <form role="form" onsubmit="event.preventDefault()">
                     <div class="form-group">
@@ -356,8 +184,7 @@
                   </form>
                 </div>
               </div>
-              <!-- End -->
-              <!-- Paypal info -->
+
               <div id="paypal" class="tab-pane fade pt-3">
                 <h6 class="pb-2">Select your paypal account type</h6>
                 <div class="form-group">
@@ -384,8 +211,7 @@
                   details of your order.
                 </p>
               </div>
-              <!-- End -->
-              <!-- bank transfer info -->
+
               <div id="net-banking" class="tab-pane fade pt-3">
                 <div class="form-group">
                   <label for="Select Your Bank">
@@ -421,8 +247,6 @@
                   details of your order.
                 </p>
               </div>
-              <!-- End -->
-              <!-- End -->
             </div>
           </div>
         </div>
