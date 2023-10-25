@@ -326,9 +326,28 @@ align-items: center;
     border: none;
     color: black;
   }
+  .thankyou__heading{
+    gap: 10px;
+    
+    display: flex;
+    flex-direction: column;
+  }
+  .thankyou__page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    max-height: 100vh;
+  }
+  .thankyou__page img{
+    width: 50%;
+  }
+ 
 @media (max-width: 1024px) {
+    .thankyou__page img{
+        width: 40%;
+    }
     .choose__us--container{
-   
         grid-template-columns: repeat(2,1fr);
         justify-content: center;
         align-items: center;
@@ -337,14 +356,12 @@ align-items: center;
     .price__lists{
         gap: 20px;
         grid-template-columns: repeat(2, 1fr);
-       
         justify-content: center;
         align-items: center;
     }
     .brands__container{
         grid-template-columns: repeat(2, 1fr);
     }
-    
 }
 @media (max-width: 940px) {
     .branding__navItem{
@@ -353,6 +370,13 @@ align-items: center;
     
 }
 @media (max-width: 786px) {
+    .thankyou__page{
+        flex-direction: column;
+
+    }
+    .thankyou__page img{
+        width: 70%;
+    }
     .choose__us--container{
         
         grid-template-columns: repeat(1,1fr);
