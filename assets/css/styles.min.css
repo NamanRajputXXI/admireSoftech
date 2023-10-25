@@ -211,12 +211,12 @@ align-items: center;
 .price__list:hover{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transform: scale(1.02);
-    transition: transform 0.5s;
+   
 
 }
 .price__list{
     display: flex;
-    
+    transition: all 0.5s ease;
     flex-direction: column;
     border-radius: 15px;
     gap: 10px;
@@ -376,7 +376,7 @@ align-items: center;
   }
  
  .learn__how{
-    width: 25%;
+    width: 35%;
  }
 
  
