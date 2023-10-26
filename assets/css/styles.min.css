@@ -1,3 +1,67 @@
+.carousel-wrap {
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+}
+.owl-carousel .owl-nav{
+  overflow: hidden;
+  height: 0px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, 
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #2caae1;
+}
+
+
+.owl-carousel .item {
+    text-align: center;
+}
+.owl-carousel .nav-btn{
+    height: 30px;
+    position: absolute;
+    width: 10px;
+    cursor: pointer;
+    top: 50px !important;
+}
+
+.owl-carousel .owl-prev.disabled,
+.owl-carousel .owl-next.disabled{
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+.owl-carousel .prev-slide{
+    background: url(nav-icon.png) no-repeat scroll 0 0;
+    left: -33px;
+}
+.owl-carousel .next-slide{
+    background: url(nav-icon.png) no-repeat scroll -24px 0px;
+    right: -10px;
+}
+.owl-carousel .prev-slide:hover{
+   background-position: 0px -53px;
+}
+.owl-carousel .next-slide:hover{
+  background-position: -24px -53px;
+}
+
+span.img-text {
+  text-decoration: none;
+  outline: none;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  cursor: pointer;
+  width: 100%;
+  font-size: 23px;
+  display: block;
+  text-transform: capitalize;
+}
+span.img-text:hover {
+  color: #2caae1;
+}
 .cta-2 {
   border: 1px solid #041569;
   color: #fff;
@@ -577,6 +641,17 @@ height: 550px;
   .modal__container {
     width: 80%;
   }
+  .owl-carousel .prev-slide{
+   
+    left: 10px;
+    z-index: 100;
+    background-color: transparent;
+}
+.owl-carousel .next-slide{
+   z-index: 100;
+    right: 40px;
+    background-color: transparent;
+}
   .learn__how {
     width: 75%;
   }
