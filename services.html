@@ -96,7 +96,8 @@
     <div style="position: relative">
       <nav
         class="navbar navbar-expand-md sticky-top d-flex d-lg-flex justify-content-between navbar-shrink"
-        id="mainNav"
+        id=""
+        style="padding: 0; background-color: #fff"
       >
         <div class="container">
           <a
@@ -105,7 +106,7 @@
             style="padding: 0; margin: 0"
             ><img
               src="assets/img/Admire_final-removebg-preview.png"
-              style="width: 121px" /></a
+              style="width: 110px" /></a
           ><button
             data-bs-toggle="collapse"
             class="navbar-toggler"
@@ -120,7 +121,7 @@
             style="flex-grow: 0"
           >
             <ul
-              class="navbar-nav mx-auto"
+              class="navbar-nav mx-auto d-flex align-items-center"
               style="
                 margin-block: initial !important;
                 margin-inline: initial;
@@ -129,7 +130,7 @@
               "
             >
               <li class="nav-item">
-                <a class="nav-link active" href="index.html">Home</a>
+                <a class="nav-link active" href="./index.html">Home</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -140,7 +141,6 @@
                   data-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
-                  data-bs-toggle="dropdown"
                 >
                   Services
                 </a>
@@ -162,26 +162,34 @@
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="about.html">About</a>
+                <a class="nav-link" href="./about.html">About</a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="contacts.html">Contact</a>
               </li>
-
               <li class="nav-item branding__navItem">
                 <a class="nav-link" href="branding.html">Branding</a>
               </li>
+              <li>
+                <a
+                  href="request.html"
+                  class="shadow cta-2 mt-3 bg-white quote__button"
+                  role="button"
+                  data-bs-target="#modal-1"
+                  data-bs-toggle="modal"
+                  >Request A Quote</a
+                >
+              </li>
             </ul>
-            <a
-              href="request.html"
-              class="shadow cta-2 bg-white quote__button"
-              role="button"
-              data-bs-target="#modal-1"
-              data-bs-toggle="modal"
-              >Request A Quote</a
-            >
           </div>
+          <a
+            href="request.html"
+            class="shadow cta-3 bg-white quote__button2"
+            role="button"
+            data-bs-target="#modal-1"
+            data-bs-toggle="modal"
+            >Request A Quote</a
+          >
         </div>
       </nav>
     </div>

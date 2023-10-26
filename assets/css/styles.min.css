@@ -6,6 +6,14 @@
   padding: 8px 16px;
   border-radius: 22px;
 }
+.cta-3 {
+  border: 1px solid #000;
+  color: #000;
+  font-weight: 400;
+  box-shadow: none !important;
+  padding: 8px 8px;
+  border-radius: 22px;
+}
 
 .cta.cta-2 {
   background-color: var(--bs-primary);
@@ -148,13 +156,8 @@
   color: white;
   cursor: pointer;
 }
-.quote__button {
-  position: fixed;
-  right: 15px;
-}
-.branding__navItem {
-  margin-right: 100px;
-}
+
+
 .service__banner img {
   width: 500px;
 }
@@ -357,6 +360,10 @@
 .learn__how {
   width: 35%;
 }
+.quote__button2{
+  display: none;
+  font-size: 12px;
+}
 
 @media (max-width: 1024px) {
   .hero__section--homePage__image {
@@ -383,9 +390,7 @@
   }
 }
 @media (max-width: 940px) {
-  .branding__navItem {
-    margin-right: 100px;
-  }
+ 
 }
 @media (max-width: 786px) {
   .upper__box {
@@ -416,10 +421,7 @@
     justify-content: center;
     align-items: center;
   }
-  .quote__button {
-    top: 90px;
-    right: 10px;
-  }
+ 
 
   .branding__collage {
     grid-template-columns: repeat(1, 1fr);
@@ -465,6 +467,15 @@
     min-width: 200px;
     max-width: 400px;
   }
+}
+@media (max-width: 768px) {
+  .quote__button{
+    display: none;
+   }
+  
+   .quote__button2{
+    display: flex;
+   }
 }
 @media (max-width: 600px) {
   .modal__container {
