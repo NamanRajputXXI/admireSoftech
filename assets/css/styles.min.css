@@ -109,7 +109,7 @@
   padding: 30px 15px;
 
   color: white;
-  background-color: #2874f0;
+  background-color: #041569;
 
   width: 45%;
 }
@@ -270,20 +270,17 @@
   font-weight: 700;
 }
 .brands__container {
-  gap: 30px;
+  gap: 50px;
   display: grid;
   justify-content: space-between;
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
 }
 .brands__container img {
-  min-width: 350px;
-  min-height: 150px;
+  max-height:  150px;
+  max-width: 300px;
 }
-.brands__image {
-  max-height: 90px;
-  max-width: 90px;
-}
+
 .choose__us--container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
