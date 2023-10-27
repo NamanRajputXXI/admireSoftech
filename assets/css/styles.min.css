@@ -18,10 +18,11 @@
     text-align: center;
 }
 .owl-carousel .nav-btn{
-    max-height: 20px;
+    max-height: 20px ;
     position: absolute;
-    width: 10px;
+    max-width: 10px ;
     cursor: pointer;
+    font-size: 50px;
     top: 50px !important;
 }
 
@@ -397,6 +398,7 @@ span.img-text:hover {
   background-image: url('https://i.pinimg.com/originals/88/15/63/881563d6444b370fa4ceea0c3183bb4c.gif'); 
     background-size: cover; 
   display: flex;
+  
 height: 550px;
   flex-direction: column;
   gap: 10px;
@@ -413,6 +415,7 @@ height: 550px;
   align-items: center;
   columns: 30px;
   width: 80%;
+  
 }
 .hero__section--heading h1{
   font-size: 90px;
@@ -487,6 +490,25 @@ height: 550px;
 .quote__button2{
   display: none;
   font-size: 12px;
+}
+.text_hide{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  
+}
+
+.text_cursor{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  border-left: 3px solid white;
 }
 
 @media (max-width: 1024px) {
@@ -608,6 +630,12 @@ height: 550px;
   }
 }
 @media (max-width: 768px) {
+  .owl-carousel .nav-btn{
+   
+    font-size: 30px;
+    top: 60px !important;
+
+}
   .quote__button{
     display: none;
    }
