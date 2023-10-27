@@ -394,12 +394,20 @@ span.img-text:hover {
   max-height: 100vh;
 }
 
+#video-container {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Place it behind other content */
+}
 .hero__section {
-  background-image: url('https://i.pinimg.com/originals/88/15/63/881563d6444b370fa4ceea0c3183bb4c.gif'); 
-    background-size: cover; 
+  /* background-image: url('https://i.pinimg.com/originals/88/15/63/881563d6444b370fa4ceea0c3183bb4c.gif');  */
+  width: 100vw;
+  background-size: cover; 
   display: flex;
-  
-height: 550px;
+  height: 550px;
   flex-direction: column;
   gap: 10px;
   width: 100%;
@@ -418,20 +426,17 @@ height: 550px;
   
 }
 .hero__section--heading h1{
-  font-size: 90px;
+  font-size: 60px;
   font-weight: 900;
+  left: 20%;
+  
 }
 
 .hero__section--content{
-  color: white;
-  position: absolute;
-  top: 450px;
-  right: 20%;
+ 
+  margin-top: 80px;
 }
-.hero__section--content h5{
-  font-size: 35px;
-  font-weight: 700;
-}
+
 
 .button-73 {
   appearance: none;
@@ -510,8 +515,21 @@ height: 550px;
   background-color: transparent;
   border-left: 3px solid white;
 }
+#type_write{
+
+  /* background: linear-gradient(45deg,  #ffd89b , #19547b);
+  background-clip: text;
+  -webkit-background-clip: text; /* For compatibility with some browsers */
+  
+}
 
 @media (max-width: 1024px) {
+  .hero__section--heading h1{
+    font-size: 40px;
+    font-weight: 900;
+    left: 20%;
+    
+  }
   .hero__section--homePage__image {
     min-width: 200px;
     max-width: 300px;
@@ -556,9 +574,11 @@ height: 550px;
     flex-direction: column;
     gap: 40px;
   }
+  
   .button-73 {
-    font-size: 1.5rem;
-    padding: 10px 2rem;
+    border-radius: 20em;
+    font-size: 1 rem;
+    padding: 5px 20px;
   }
 
   .upper__left {
@@ -646,10 +666,19 @@ height: 550px;
    .hero__section{
     height: 400px;
    }
+   
    .hero__section--heading h1{
-     font-size: 40px;
-
-   }
+    
+    font-weight: 900;
+    left: 25%;
+    font-size: 40px;
+  
+  }
+  
+  .hero__section--content{
+   
+    margin-top: 50px;
+  }
    
    .hero__section--content{
      
@@ -666,6 +695,7 @@ height: 550px;
    }
 }
 @media (max-width: 600px) {
+  
   .modal__container {
     width: 80%;
   }
@@ -705,16 +735,20 @@ height: 550px;
     justify-content: center;
     align-items: center;
   }
+  .hero__section {
+   
+    height: 250px;
+   margin-top: 0px;
+    gap: 1px;
+   
+    padding: 10px;
+   
+  }
 }
 
 @media (max-width: 576px) {
-  .hero__section--heading h1{
-    font-size: 28px;
+  
 
-  }
-  .hero__section--content h5{
-    font-size: 20px;
-  }
   .hero__section--homePage__image {
     min-width: 200px;
     max-width: 300px;
@@ -737,8 +771,21 @@ height: 550px;
     font-size: 16px;
     font-weight: 100;
   }
+  .hero__section--heading h1{
+    left: 10%;  
+  }
 }
 @media (max-width: 480px) {
+  .button-73 {
+    margin-top: -20px;
+  }
+  .hero__section{
+    height: 200px;
+  }
+  .hero__section--heading h1{
+    left: 15%;  
+    font-size: 25px;
+  }
   .our__brands--heading {
     font-size: 35px;
   }
