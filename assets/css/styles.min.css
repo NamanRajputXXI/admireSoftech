@@ -523,10 +523,21 @@ span.img-text:hover {
   
 }
 
-.card{
+.service-card{
   min-height: 500px;
 }
+.branding__banner--image{
+  width: 400px;
+  height: 300px;
+  bottom: -50px;
+  
+}
 @media (max-width: 1024px) {
+  .branding__banner--image{
+    width: 300px;
+    height: 200px;
+    margin-top: 150px;
+  }
   .hero__section--heading h1{
     font-size: 40px;
     font-weight: 900;
@@ -698,7 +709,12 @@ span.img-text:hover {
    }
 }
 @media (max-width: 600px) {
-  
+  .branding__banner--image{
+    width: 150px;
+    height: 100px;
+    bottom: 20%;
+    
+  }
   .modal__container {
     width: 80%;
   }
@@ -779,7 +795,7 @@ span.img-text:hover {
   }
 }
 @media (max-width: 480px) {
-  .card{
+  .service-card{
     min-height: 420px;
   }
   .button-73 {
@@ -827,5 +843,10 @@ span.img-text:hover {
     
     font-size: 20px;
     top: 80px !important;
+}
+.branding__banner--image{
+  
+  bottom: 15%;
+  
 }
 }
