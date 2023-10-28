@@ -470,6 +470,10 @@ span.img-text:hover {
   box-shadow: #FF6314 0 -6px 8px inset;
   transform: scale(1.125);
 } */
+.our_services{
+  padding-top: 70px;
+}
+
 
 .button-73:active {
   transform: scale(1.025);
@@ -657,8 +661,8 @@ span.img-text:hover {
    
     font-size: 30px;
     top: 60px !important;
-
 }
+
 .hero__section {
   gap: 10px;
   justify-content: start;
