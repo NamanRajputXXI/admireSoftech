@@ -523,6 +523,9 @@ span.img-text:hover {
   
 }
 
+.card{
+  min-height: 500px;
+}
 @media (max-width: 1024px) {
   .hero__section--heading h1{
     font-size: 40px;
@@ -776,6 +779,9 @@ span.img-text:hover {
   }
 }
 @media (max-width: 480px) {
+  .card{
+    min-height: 420px;
+  }
   .button-73 {
     margin-top: -20px;
   }
