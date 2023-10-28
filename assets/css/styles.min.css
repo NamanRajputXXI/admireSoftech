@@ -528,16 +528,16 @@ span.img-text:hover {
   min-height: 500px;
 }
 .branding__banner--image{
-  width: 400px;
-  height: 300px;
-  bottom: -50px;
+  width: 500px;
+  height: 400px;
+  bottom: -120px;
   
 }
 @media (max-width: 1024px) {
   .branding__banner--image{
-    width: 300px;
+    width: 280px;
     height: 200px;
-    margin-top: 150px;
+    bottom: -20px;
   }
   .hero__section--heading h1{
     font-size: 40px;
@@ -714,6 +714,7 @@ span.img-text:hover {
     width: 150px;
     height: 100px;
     bottom: 20%;
+   
     
   }
   .modal__container {
