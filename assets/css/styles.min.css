@@ -348,8 +348,9 @@ span.img-text:hover {
   grid-template-columns: repeat(3, 1fr);
 }
 .brands__container img {
-  max-height:  150px;
-  max-width: 300px;
+  max-height:  100px;
+  max-width: 250px;
+
 }
 
 .choose__us--container {
