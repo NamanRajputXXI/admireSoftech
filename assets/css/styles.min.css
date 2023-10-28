@@ -345,7 +345,7 @@ span.img-text:hover {
   display: grid;
   justify-content: space-between;
   align-items: center;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 300px);
 }
 .brands__container img {
   max-height:  100px;
