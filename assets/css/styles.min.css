@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+  font-family: 'Roboto', sans-serif;
+}
 .carousel-wrap {
   max-width: 1000px;
   margin: auto;
@@ -574,23 +578,18 @@ span.img-text:hover {
    text-align: center;
     width: 100%;
   }
-
-  
-  
 }
 @media (max-width: 786px) {
   .upper__box {
     flex-direction: column;
     gap: 40px;
   }
-  
   .button-73 {
     border-radius: 20em;
     font-size: 1 rem;
     padding: 5px 20px;
     margin-top: 80px;
   }
-
   .upper__left {
     width: 100%;
     justify-content: center;
@@ -615,8 +614,6 @@ span.img-text:hover {
     justify-content: center;
     align-items: center;
   }
- 
-
   .branding__collage {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -653,12 +650,9 @@ span.img-text:hover {
     min-width: 270px;
     min-height: 80px;
   }
-
- 
 }
 @media (max-width: 768px) {
-  .owl-carousel .nav-btn{
-   
+  .owl-carousel .nav-btn{  
     font-size: 30px;
     top: 60px !important;
 }
