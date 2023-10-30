@@ -1,6 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@400&f[]=telma@400&display=swap');
+
 *{
-  font-family: 'Roboto', sans-serif;
+  
+  font-family: 'Satoshi', sans-serif;
+
+}
+#type_write{
+  font-family: 'Telma', cursive;
 }
 .carousel-wrap {
   max-width: 1000px;
