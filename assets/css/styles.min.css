@@ -502,7 +502,7 @@ span.img-text:hover {
   width: 35%;
 }
 .quote__button2{
-  display: none;
+  display: flex;
   font-size: 12px;
 }
 .text_hide{
@@ -663,9 +663,9 @@ span.img-text:hover {
   align-items: center;
  
 }
-  .quote__button{
-    display: none;
-   }
+  /* .quote__button{
+    display: fle;
+   } */
   
    .quote__button2{
     display: flex;
@@ -752,7 +752,9 @@ span.img-text:hover {
 }
 
 @media (max-width: 576px) {
-  
+  .our_services{
+    margin-top: -100px;
+  }
 
   .view {
     display: flex;
