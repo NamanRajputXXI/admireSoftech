@@ -11,7 +11,7 @@
   flex-direction: column;
   justify-content: space-between;
 }
-/* .brands__image1{
+.brands__image1{
   height: 100px;
   
 }
@@ -22,7 +22,7 @@
 .brands__image3{
   height: 100px;
 
-} */
+}
 #type_write{
   font-family: 'Telma', cursive;
 }
