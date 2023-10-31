@@ -528,12 +528,66 @@ background-image: linear-gradient(315deg, #041569 0%, #fff 74% );
 
 
 .button-73{
-  width: 200px;
+  /* width: 200px;
   color: #041569;
+  background-color: #fff;
+  padding: 10px 30px;
+  font-size: 20px;
+  border: 1px solid #041569;
+  font-weight: 900; */
+  border: none;
+  border-radius: 2rem;
+  color: #041569;
+ font-size: 20px;
+ outline: none;
+  overflow: hidden;
+  padding: 10px 30px;
+  position: relative;
+  font-weight: 900;
+  text-decoration: none;
+  transition: 0.5s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
+
 }
-.button-73:active {
+
+.button-73::after {
+  background-color: #041569;
+  border-radius: 2rem;
+  content: '';
+  display: block;
+  height: 100%;
+
+  width: 100%;
+  position: absolute;
+  left: 0;
+  outline: none;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.3s transform ease-out;
+  will-change: transform;
+  z-index: -100;
+  
+
+}
+
+.button-73:hover::after {
+  transform: translate(0, 0);
+
+}
+
+.button-73:hover {
+ border: 1px solid #fff;
+  color: white;
+ 
+  
+  will-change: transform;
+}
+
+/* .button-73:active {
   transform: scale(1.025);
-}
+} */
 
 .upper__box {
   display: flex;
