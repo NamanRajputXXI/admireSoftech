@@ -5,6 +5,24 @@
   font-family: 'Satoshi', sans-serif;
 
 }
+.service__cards--content{
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* .brands__image1{
+  height: 100px;
+  
+}
+.brands__image2{
+  height: 100px;
+  
+}
+.brands__image3{
+  height: 100px;
+
+} */
 #type_write{
   font-family: 'Telma', cursive;
 }
@@ -357,11 +375,11 @@ span.img-text:hover {
   align-items: center;
   grid-template-columns: repeat(3, 300px);
 }
-.brands__container img {
+/* .brands__container img {
   max-height:  100px;
   max-width: 250px;
 
-}
+} */
 
 .choose__us--container {
   display: grid;
@@ -432,17 +450,30 @@ span.img-text:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
   width: 80%;
   
 }
 .hero__section--heading h1{
   font-size: 60px;
   font-weight: 900;
-  left: 20%;
+  left: 30%;
   
 }
+.services__cards--imageBox{
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.quote__button{
+  margin-left: 10px;
+}
+.quote__button{
+  background-color: white;
+  border: 1px solid #000;
+  color: #000;
+}
 .hero__section--content{
  
   margin-top: 80px;
@@ -503,7 +534,14 @@ span.img-text:hover {
   justify-content: center;
   gap: 30px;
 }
-
+.bi:hover{
+  color: #041569;
+  transition: 400ms;
+  
+}
+.bi{
+  font-size: 25px;
+}
 .learn__how {
   width: 35%;
 }
@@ -520,6 +558,7 @@ span.img-text:hover {
   background-color: transparent;
   
 }
+
 
 .text_cursor{
   position: absolute;
@@ -546,6 +585,11 @@ span.img-text:hover {
   height: 400px;
   bottom: -120px;
   
+}
+.brands__container img {
+  max-height:  100px;
+  max-width: 250px;
+
 }
 @media (max-width: 1024px) {
   .branding__banner--image{
@@ -786,6 +830,9 @@ span.img-text:hover {
   
 }
 @media (max-width: 480px) {
+  .bi{
+    font-size: 20px;
+  }
   .service-card{
     min-height: 420px;
   }
