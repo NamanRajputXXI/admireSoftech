@@ -98,7 +98,11 @@ span.img-text:hover {
   background-color: #041569;
   box-shadow: none !important;
   padding: 8px 16px;
-  border-radius: 22px;
+  
+}
+.footer{
+  background-color: #041569;
+  color: #fff;
 }
 .cta-3 {
   border: 1px solid #041569;
@@ -536,13 +540,13 @@ background-image: linear-gradient(315deg, #041569 0%, #fff 74% );
   border: 1px solid #041569;
   font-weight: 900; */
   border: none;
-  border-radius: 2rem;
+  
   color: #041569;
   border: 1px solid white;
  font-size: 20px;
  outline: none;
   overflow: hidden;
-  padding: 10px 30px;
+  padding: 8px 30px;
   position: relative;
   font-weight: 900;
   text-decoration: none;
@@ -552,39 +556,20 @@ background-image: linear-gradient(315deg, #041569 0%, #fff 74% );
 
 }
 
-.button-73::after {
-  background-color: #041569;
-  border-radius: 2rem;
-  content: '';
-  display: block;
-  height: 100%;
-
-  width: 100%;
-  position: absolute;
-  left: 0;
-  outline: none;
-  top: 0;
-  transform: translate(-100%, 0) rotate(10deg);
-  transform-origin: top left;
-  transition: 0.3s transform ease-out;
-  will-change: transform;
-  z-index: -100;
-  
-
-}
-
-.button-73:hover::after {
-  transform: translate(0, 0);
-
-}
-
 .button-73:hover {
- border: 1px solid #fff;
-  color: white;
+  background-color: #041569;
+  transition: 0.5s;
+  color: #fff;
+
+ 
  
   
-  will-change: transform;
+
 }
+
+
+
+
 
 /* .button-73:active {
   transform: scale(1.025);
@@ -605,12 +590,13 @@ background-image: linear-gradient(315deg, #041569 0%, #fff 74% );
   gap: 30px;
 }
 .bi:hover{
-  color: #041569;
+  
   transition: 400ms;
   
 }
 .bi{
   font-size: 25px;
+  color: white;
 }
 .learn__how {
   width: 35%;
