@@ -583,20 +583,7 @@ background-image: linear-gradient(315deg, #041569 0%, #fff 74% );
   background-color: #041569;
   transition: 0.5s;
   color: #fff;
-
- 
- 
-  
-
 }
-
-
-
-
-
-/* .button-73:active {
-  transform: scale(1.025);
-} */
 
 .upper__box {
   display: flex;
@@ -670,7 +657,105 @@ background-image: linear-gradient(315deg, #041569 0%, #fff 74% );
   max-width: 250px;
 
 }
+.branding__section--content{
+  display: flex;
+  width: 100%;
+ 
+  justify-content: center;
+  align-items: center;
+}
+
+.branding__section--text{
+  flex: 0.6;
+  height: 550px;
+
+  display: flex;
+  flex-direction: column;
+  background-color: #041569;
+  color: #fff;
+  padding: 20px 30px;
+}
+.branding__section--text h1{
+  font-size: 40px;
+  font-weight: 900;
+}
+.branding__section--text h5{
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.branding__section--image {
+  flex:0.5;
+  width: 40%;
+  overflow: hidden;
+  height: 550px;
+}
+.branding__section--image img{
+  height: 550px;
+}
+.branding__section--buttons button{
+  border: none; 
+  color: #041569;
+  border: 1px solid white;
+ font-size: 18px;
+ outline: none;
+  overflow: hidden;
+  padding: 8px 30px;
+  position: relative;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.5s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
+
+}
+
+.branding__section--buttons button:hover {
+  background-color: #041569;
+  transition: 0.5s;
+  color: #fff;
+}
+
+
+
 @media (max-width: 1024px) {
+
+  .branding__section--content{
+   
+    height: fit-content;
+    flex-direction: column;
+
+  }
+  .branding__section--text{
+    flex: 1;
+  }
+  
+  .branding__section--text{
+   height: 300px;
+    gap: 10px;
+  }
+  
+
+  .branding__section--image {
+  flex:1;
+  width: 100%;
+  }
+
+  
+  .branding__section--buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  
+
+
+
+
+
+
+
+
   .branding__banner--image{
     width: 280px;
     height: 200px;
@@ -681,11 +766,9 @@ background-image: linear-gradient(315deg, #041569 0%, #fff 74% );
   }
   .hero__section h1{
     font-size: 60px;
-    
   }
   .headline{
     font-size:18px;
-    
   }
   
   .hero__section--card{
@@ -736,10 +819,19 @@ background-image: linear-gradient(315deg, #041569 0%, #fff 74% );
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 940px) {
-  
-}
+
 @media (max-width: 786px) {
+  .branding__section--image {
+ 
+  width: 100%;  
+    max-height: 400px !important;
+    }
+    .branding__banner--image img{
+      height: 400px !important;
+    }
+    .branding__section--text h1{
+      font-size: 35px;
+    }
   .our_services{
     margin-top: 50px;
   }
@@ -982,4 +1074,22 @@ background-image: linear-gradient(315deg, #041569 0%, #fff 74% );
 .branding__banner--image{  
   bottom: 15%;
 }
+.branding__section--text{
+  padding: 10px ;
+}
+.branding__section--image {
+ 
+  
+    max-height: 300px !important;
+
+    }
+    .branding__banner--image img{
+      height: 300px !important;
+    }
+    .branding__section--buttons button{
+      
+     font-size: 14px;
+     padding: 10px;
+    
+    }
 }
