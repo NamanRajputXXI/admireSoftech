@@ -433,11 +433,12 @@ span.img-text:hover {
 
 /* hero section styling */
 .hero__section {
-  background-image: url("../img/nasa-Q1p7bh3SHj8-unsplash.jpg");
+  background-image: url("../img/earth-3537401_1920.jpg");
   background-size: cover;
   height: 100vh;
   width: 100%;
   padding: 20px;
+  
   display: flex;
   justify-content: center;
   align-items: center;
