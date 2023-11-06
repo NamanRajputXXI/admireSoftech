@@ -66,6 +66,7 @@
     ></script>
     <script src="./assets/js/script.min.js"></script>
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script src="./assets/js/forms.js" defer></script>
   </head>
 
   <body>
@@ -91,9 +92,9 @@
           <div class="right__modal--content">
             <i
               class="fa-solid fa-xmark text-white close__modal"
-              onclick=" closeBootstrapPopup()"
+              onclick="closeBootstrapPopup()"
             ></i>
-            <form>
+            <!-- <form id="myForm">
               <div class="form-group py-3">
                 <input
                   type="text"
@@ -127,7 +128,55 @@
                 <span class="text-primary">privacy policy</span>
               </p>
 
-              <button type="submit" class="otp__button">
+              <button type="submit" class="otp__button" id="submitButton">
+                Request Callback
+              </button>
+            </form> -->
+            <form id="popupForm">
+              <div class="form-group py-3">
+                <input
+                  type="text"
+                  class="form-control my-3"
+                  id="nameInput"
+                  aria-describedby=""
+                  placeholder="Enter your name"
+                />
+                <input
+                  type="number"
+                  class="form-control my-3"
+                  id="mobileInput"
+                  aria-describedby=""
+                  placeholder="Enter your mobile"
+                />
+                <select
+                  class="form-select text-muted"
+                  id="serviceSelect"
+                  aria-label="Default select example"
+                >
+                  <option selected>Services</option>
+                  <option value="Website Design & Development">
+                    Website Design & Development
+                  </option>
+                  <option value="Seo">Seo</option>
+                  <option value="Graphic Design">Graphic Design</option>
+                  <option value="Facebook & Instagram Ads">
+                    Facebook & Instagram Ads
+                  </option>
+                  <option value="Google Ads">Google Ads</option>
+                </select>
+              </div>
+              <p>
+                By continuing, you agree to the
+                <span class="text-primary">terms of</span> and
+                <span class="text-primary">privacy policy</span>
+              </p>
+
+              <button
+                type="submit"
+                id="submitButton"
+                onclick="closeBootstrapPopup()"
+                class="otp__button"
+              >
                 Request Callback
               </button>
             </form>
@@ -151,65 +200,74 @@
                 data-bs-dismiss="modal"
               ></button>
             </div>
-            <div
-              class="modal-body"
-              style="margin-bottom: 0px; padding-bottom: 0px"
-            >
-              <div style="margin-bottom: 15px">
-                <input
-                  type="text"
-                  placeholder="Enter your name"
-                  style="width: 100%"
-                />
-              </div>
-              <div style="margin-bottom: 15px">
-                <input
-                  type="tel"
-                  placeholder="Enter your mobile"
-                  style="width: 100%"
-                />
-              </div>
-              <div style="margin-bottom: 15px">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  style="width: 100%"
-                />
-              </div>
-              <div style="margin-bottom: 15px">
-                <select style="width: 100%; padding: 10px; color: grey">
-                  <option value="default" selected="">Select Service</option>
-                  <option value="website">
-                    Website Design &amp; Development
-                  </option>
-                  <option value="seo">SEO</option>
-                  <option value="google-ads">Google Ads</option>
-                  <option value="fb&amp;insta_ads">
-                    Facebook &amp; Instagram Ads
-                  </option>
-                  <option value="linkedin_ads">LinkedIn Ads</option>
-                </select>
-              </div>
-              <div style="margin-bottom: 15px">
-                <textarea
-                  cols="24"
-                  style="width: 100%; padding: 10px; padding-bottom: 0px"
-                  placeholder="Enter your message"
-                ></textarea>
-              </div>
-            </div>
-            <div
-              class="modal-footer d-lg-flex justify-content-lg-center"
-              style="border: 0; padding-top: 0"
-            >
-              <button
-                class="btn btn-primary"
-                type="button"
-                style="width: 100%; border-radius: 4px"
+            <form id="requestQuoteForm">
+              <div
+                class="modal-body"
+                style="margin-bottom: 0px; padding-bottom: 0px"
               >
-                SUBMIT
-              </button>
-            </div>
+                <div style="margin-bottom: 15px">
+                  <input
+                    type="text"
+                    id="requestQuoteFormName"
+                    placeholder="Enter your name"
+                    style="width: 100%"
+                  />
+                </div>
+                <div style="margin-bottom: 15px">
+                  <input
+                    type="tel"
+                    id="requestQuoteFormMobile"
+                    placeholder="Enter your mobile"
+                    style="width: 100%"
+                  />
+                </div>
+                <div style="margin-bottom: 15px">
+                  <input
+                    type="email"
+                    id="requestQuoteFormEmail"
+                    placeholder="Enter your email"
+                    style="width: 100%"
+                  />
+                </div>
+                <div style="margin-bottom: 15px">
+                  <select
+                    style="width: 100%; padding: 10px; color: grey"
+                    id="requestQuoteFormSelect"
+                  >
+                    <option value="default" selected="">Select Service</option>
+                    <option value="website">
+                      Website Design &amp; Development
+                    </option>
+                    <option value="seo">SEO</option>
+                    <option value="google-ads">Google Ads</option>
+                    <option value="fb&amp;insta_ads">
+                      Facebook &amp; Instagram Ads
+                    </option>
+                    <option value="linkedin_ads">LinkedIn Ads</option>
+                  </select>
+                </div>
+                <div style="margin-bottom: 15px">
+                  <textarea
+                    id="requestQuoteFormTextMessage"
+                    cols="24"
+                    style="width: 100%; padding: 10px; padding-bottom: 0px"
+                    placeholder="Enter your message"
+                  ></textarea>
+                </div>
+              </div>
+              <div
+                class="modal-footer d-lg-flex justify-content-lg-center"
+                style="border: 0; padding-top: 0"
+              >
+                <button
+                  class="btn btn-primary"
+                  type="submit"
+                  style="width: 100%; border-radius: 4px"
+                >
+                  SUBMIT
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -1028,12 +1086,12 @@
         <div class="row d-flex justify-content-center">
           <div class="col-md-6 col-xl-4">
             <div>
-              <form class="p-3 p-xl-4" method="post" data-bs-theme="light">
+              <form class="p-3 p-xl-4" id="contactForm" data-bs-theme="light">
                 <div class="mb-3">
                   <input
                     class="form-control"
                     type="text"
-                    id="name-1"
+                    id="contactFormName"
                     name="name"
                     placeholder="Name"
                   />
@@ -1042,7 +1100,7 @@
                   <input
                     class="form-control"
                     type="email"
-                    id="email-1"
+                    id="contactFormEmail"
                     name="email"
                     placeholder="Email"
                   />
@@ -1050,7 +1108,7 @@
                 <div class="mb-3">
                   <textarea
                     class="form-control"
-                    id="message-1"
+                    id="contactFormTextMessage"
                     name="message"
                     rows="6"
                     placeholder="Message"

@@ -484,14 +484,11 @@ span.img-text:hover {
 }
 .white__card{
   background-color: #fff;
-  color: #041569;
-  
-background-image: linear-gradient(315deg, #041569 0%, #fff 74% );
+  color: #041569;  
 }
 .blue__card{
   background-color: #041569;
   color: #fff;
-  
 }
 .white__card button{
   padding: 0 30px;
