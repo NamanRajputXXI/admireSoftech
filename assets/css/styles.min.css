@@ -719,7 +719,23 @@ background-image: linear-gradient(315deg, #041569 0%, #fff 74% );
   transition: 0.5s;
   color: #fff;
 }
-
+.expert__button {
+    display: flex;
+ font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #041569;
+    border: 1px solid #fff;
+    color: #fff;
+    width: 270px;
+    font-weight: 700;
+}
+.expert__button:hover{
+  background-color: #fff;
+  color: #041569;
+  transition: 0.3s;
+}
 
 
 @media (max-width: 1024px) {
